@@ -26,7 +26,7 @@ if [ -n "${missing_deps[*]}" ]; then
 fi
 
 if [ ! -f "$redirector/main.exe" ]; then
-	log_error "redirector binaries not found"
+	log_error "redirector binaries not found, please compile them first ($source_dir/steam_redirector/README.md)"
 	exit 1
 fi
 
